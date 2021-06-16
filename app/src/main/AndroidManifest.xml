@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ridha.e_event">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/eevent_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/eevent_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E_Event">
+        <activity android:name=".AddKalenderEvent"></activity>
+        <activity android:name=".AddKontak" />
+        <activity android:name=".Logout" />
+        <activity android:name=".Kontak" />
+        <activity android:name=".KalenderEvent" />
+        <activity android:name=".Berita" />
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".Login" />
+        <activity android:name=".DaftarAkun" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

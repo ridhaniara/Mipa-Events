@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Kontak">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnLeftKontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:rotationY="180"
+            android:background="@null"
+            android:layout_gravity="start|top"
+            app:srcCompat="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kontak"
+            android:layout_gravity="center"
+            android:textColor="#9B59B6"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/btnRightKontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow" />
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Kontak"-->
+<!--        android:textColor="#9B59B6"-->
+<!--        android:textSize="25sp"-->
+<!--        android:gravity="center_horizontal" />-->
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Cari" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTambahBaru"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Tambah Kontak Baru"
+            android:background="@drawable/btn_bg"
+            app:backgroundTint="#9B59B6"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/kontakList"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"/>
+
+
+
+</LinearLayout>
